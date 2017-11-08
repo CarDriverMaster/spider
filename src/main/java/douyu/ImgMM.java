@@ -45,7 +45,7 @@ public class ImgMM {
                     while (true){
                         try {
                             String url = blockingQueue.take();
-                            System.out.println("开始下载--->"+url);
+                            System.out.println("开始下载----------->"+url);
                             HttpUtil.download(url,"E:\\img"+"/"+ UuidUtil.getUuid()+".jpg");
                         } catch (InterruptedException e) {
                             e.printStackTrace();
